@@ -13,7 +13,7 @@ public class ProgramController {
     private ProgramService programService;
 
     @PostMapping
-    public Program saveProgram(@RequestBody String programText) {
+    public Program saveProgram(@RequestParam String programText) {
         return programService.saveProgram(programText);
     }
 }
